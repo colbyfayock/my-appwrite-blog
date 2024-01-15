@@ -1,5 +1,6 @@
 ---
 import { ID } from 'appwrite';
+import { marked } from 'marked';
 
 import { databases } from '@/lib/appwrite';
 
@@ -11,7 +12,7 @@ if (Astro.request.method === "POST") {
   const data = {
     title: String(formData.get('title')),
     slug: String(formData.get('slug')),
-    content: String(formData.get('content')),
+    content: await marked(String(formData.get('content'))),
     excerpt: String(formData.get('excerpt')),
   }
   const results = await databases.createDocument(
