@@ -1,6 +1,27 @@
 ---
+import { ID } from 'appwrite';
+
+import { databases } from '@/lib/appwrite';
+
 import Layout from '@/layouts/Layout.astro';
 import Container from '@/components/Container.astro';
+
+if (Astro.request.method === "POST") {
+  const formData = await Astro.request.formData();
+  const data = {
+    title: String(formData.get('title')),
+    slug: String(formData.get('slug')),
+    content: String(formData.get('content')),
+    excerpt: String(formData.get('excerpt')),
+  }
+  const results = await databases.createDocument(
+    import.meta.env.PUBLIC_APPWRITE_DATABASE_ID,
+    import.meta.env.PUBLIC_APPWRITE_COLLECTION_ID,
+    ID.unique(),
+    data
+  );
+  return Astro.redirect(`/posts/${results.slug}`);
+}
 ---
 <Layout title="New Post - My Blog">
 	<Container>
