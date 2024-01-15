@@ -1,0 +1,19 @@
+---
+export const prerender = true;
+
+import Layout from '@/layouts/Layout.astro';
+import Container from '@/components/Container.astro';
+---
+<Layout title="Title - My Blog">
+	<Container>
+		<article class="prose mx-auto">
+			<h1 class="text-4xl font-extrabold mb-6">Post Title</h1>
+
+			<p class="text-slate-500 mb-14">
+				<time datetime="2024-01-15T03:51:30.421Z">Published 1/14/2024</time>
+			</p>
+			
+			<p>Content</p>
+		</article>
+	</Container>
+</Layout>
