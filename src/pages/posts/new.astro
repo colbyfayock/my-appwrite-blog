@@ -7,7 +7,7 @@ import { databases } from '@/lib/appwrite';
 import Layout from '@/layouts/Layout.astro';
 import Container from '@/components/Container.astro';
 
-if (Astro.request.method === "POST") {
+if ( Astro.request.method === "POST" ) {
   const formData = await Astro.request.formData();
   const data = {
     title: String(formData.get('title')),
@@ -27,6 +27,9 @@ if (Astro.request.method === "POST") {
 <Layout title="New Post - My Blog">
 	<Container>
     <h1 class="text-2xl font-bold mb-6">New Post</h1>
+    <p class="rounded bg-red-100 dark:bg-red-900 text-sm text-center py-2 mb-6">
+      Creating a new post is disabled for this demo.
+    </p>
     <form method="POST">
       <div class="mb-6">
         <label class="block text-sm font-semibold mb-3" for="title">Title</label>
@@ -68,3 +71,8 @@ if (Astro.request.method === "POST") {
     </form>
   </Container>
 </Layout>
+
+<script>
+// Disable form submissions to avoid POST request to page
+document.querySelector('form')?.addEventListener('submit', (event) => event.preventDefault());
+</script>
