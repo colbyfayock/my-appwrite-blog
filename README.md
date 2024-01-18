@@ -1,7 +1,17 @@
-# Demo Astro Blog Starter
+# Astro Blog with Appwrite
 
-Get started by running:
+Demo for tutorial 
 
-```sh
-npm create astro@latest my-astro-project -- --template colbyfayock/demo-astro-blog-starter
-```
+📝 Article: 
+
+📺 YouTube: 
+
+🚀 Demo: 
+
+## More tutorials and walkthroughs
+
+🐦 [Follow me on Twitter](https://twitter.com/colbyfayock)
+
+📺 [Subscribe on YouTube](https://www.youtube.com/colbyfayock)
+
+✉️ [Sign Up for My Newsletter](https://colbyfayock.com/newsletter)
