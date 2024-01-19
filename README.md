@@ -1,12 +1,12 @@
 # Astro Blog with Appwrite
 
-Demo for tutorial 
+Demo for tutorial [Astro Blog with Appwrite](https://www.youtube.com/watch?v=OERqwLy_reA)
 
-📝 Article: 
+📝 Article: https://spacejelly.dev/posts/how-to-create-a-blog-with-astro-appwrite/
 
-📺 YouTube: 
+📺 YouTube: https://www.youtube.com/watch?v=OERqwLy_reA
 
-🚀 Demo: 
+🚀 Demo: https://my-appwrite-blog.vercel.app/
 
 ## More tutorials and walkthroughs
 
