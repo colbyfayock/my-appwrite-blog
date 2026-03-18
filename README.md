@@ -6,8 +6,6 @@ Demo for tutorial [Astro Blog with Appwrite](https://www.youtube.com/watch?v=OER
 
 📺 YouTube: https://www.youtube.com/watch?v=OERqwLy_reA
 
-🚀 Demo: https://my-appwrite-blog.vercel.app/
-
 ## More tutorials and walkthroughs
 
 🐦 [Follow me on Twitter](https://twitter.com/colbyfayock)
